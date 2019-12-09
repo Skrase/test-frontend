@@ -1,0 +1,196 @@
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<title>Test frontend</title>
+		<style>.entry-title{font-family:"Roboto", sans-serif;font-size:1.5rem;line-height:1.875rem;font-weight:700;margin:0 0 1rem}
+
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<div class="center flex flex_jc-center flex_ai-center">
+				<div class="header__column"></div><a class="header__logo" href="/"><img src="i/logo.svg" alt="logotype"/></a>
+				<div class="header__column flex flex_ai-center flex_jc-end">
+					<button class="header__search-button js-icon" type="button" data-icon="search"></button>
+					<button class="header__nav-button js-nav-button" type="button"><span class="header__nav-button-line header__nav-button-line_top"></span><span class="header__nav-button-line header__nav-button-line_mid"></span><span class="header__nav-button-line  header__nav-button-line_bot"></span></button>
+				</div>
+			</div>
+		</header>
+		<nav class="main-nav js-nav">
+			<div class="center">
+				<ul class="main-nav__list">
+					<li class="main-nav__item"><a href="#"><span class="main-nav__item-title">Demos</span><span class="main-nav__item-icon js-icon" data-icon="arrow"></span></a>
+						<ul class="main-nav__sublist">
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Header</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Layout</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Share Buttons</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Gallery Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Video Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item"><a href="#"><span class="main-nav__item-title">Post</span><span class="main-nav__item-icon js-icon" data-icon="arrow"></span></a>
+						<ul class="main-nav__sublist">
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Header</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Layout</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Share Buttons</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Gallery Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Video Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item"><a href="#"><span class="main-nav__item-title">Features</span><span class="main-nav__item-icon js-icon" data-icon="arrow"></span></a>
+						<ul class="main-nav__sublist">
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Header</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Layout</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Share Buttons</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Gallery Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Video Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item"><a href="#"><span class="main-nav__item-title">Categories</span><span class="main-nav__item-icon js-icon" data-icon="arrow"></span></a>
+						<ul class="main-nav__sublist">
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Header</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Layout</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Share Buttons</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Gallery Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Video Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item"><a href="#"><span class="main-nav__item-title">Shop</span><span class="main-nav__item-icon js-icon" data-icon="arrow"></span></a>
+						<ul class="main-nav__sublist">
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Header</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Post Layout</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Share Buttons</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Gallery Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+							<li class="main-nav__item main-nav__item_subitem"><a href="#"><span class="main-nav__item-title">Video Post</span><span class="main-nav__item-icon main-nav__item-icon_right js-icon" data-icon="arrow"></span></a></li>
+						</ul>
+					</li>
+					<li class="main-nav__item"><a href="#">Buy Now</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<div class="wrapper">
+				<div class="center flex">
+										<article class="post"><a class="post__img" href="#">
+												<picture>
+													<source data-srcset="i/posts/1.webp 1x, i/posts/1@2x.webp 2x" type="image/webp"/><img class="lazy" data-src="i/posts/1.jpg" data-srcset="i/posts/1@2x.jpg 2x" alt="Eat Right For Your Exercise Regime"/>
+												</picture></a><a class="psot__tag" href="#">Lifestyle</a><a class="post__title" href="#">
+												<h2 class="entry-title">Eat Right For Your Exercise Regime</h2></a>
+											<div class="post__meta"><a class="post__meta-item post__meta-item_author" href="#">Niek Bove</a>
+												<time class="post__meta-item" datetime="2019-12-06" pubdate="pubdate">April 8, 2018</time><span class="post__meta-item">3K Views</span>
+											</div>
+											<div class="post__description">
+												<p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…</p>
+											</div>
+										</article>
+										<article class="post"><a class="post__img" href="#">
+												<picture>
+													<source data-srcset="i/posts/2.webp 1x, i/posts/2@2x.webp 2x" type="image/webp"/><img class="lazy" data-src="i/posts/2.jpg" data-srcset="i/posts/2@2x.jpg 2x" alt="The Look: Perfect Balance"/>
+												</picture></a><a class="psot__tag" href="#">Lifestyle</a><a class="post__title" href="#">
+												<h2 class="entry-title">The Look: Perfect Balance</h2></a>
+											<div class="post__meta"><a class="post__meta-item post__meta-item_author" href="#">Niek Bove</a>
+												<time class="post__meta-item" datetime="2019-12-06" pubdate="pubdate">April 8, 2018</time><span class="post__meta-item">3K Views</span>
+											</div>
+											<div class="post__description">
+												<p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…</p>
+											</div>
+										</article>
+										<article class="post"><a class="post__img" href="#">
+												<picture>
+													<source data-srcset="i/posts/3.webp 1x, i/posts/3@2x.webp 2x" type="image/webp"/><img class="lazy" data-src="i/posts/3.jpg" data-srcset="i/posts/3@2x.jpg 2x" alt="Fun Things to Do in Rome"/>
+												</picture></a><a class="psot__tag" href="#">Style</a><a class="post__title" href="#">
+												<h2 class="entry-title">Fun Things to Do in Rome</h2></a>
+											<div class="post__meta"><a class="post__meta-item post__meta-item_author" href="#">Niek Bove</a>
+												<time class="post__meta-item" datetime="2019-12-06" pubdate="pubdate">April 8, 2018</time><span class="post__meta-item">3K Views</span>
+											</div>
+											<div class="post__description">
+												<p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…</p>
+											</div>
+										</article>
+										<article class="post"><a class="post__img" href="#">
+												<picture>
+													<source data-srcset="i/posts/4.webp 1x, i/posts/4@2x.webp 2x" type="image/webp"/><img class="lazy" data-src="i/posts/4.jpg" data-srcset="i/posts/4@2x.jpg 2x" alt="24 Colorful Ceilings That Add Unexpected Contrast to Any Room"/>
+												</picture></a><a class="psot__tag" href="#">Style</a><a class="post__title" href="#">
+												<h2 class="entry-title">24 Colorful Ceilings That Add Unexpected Contrast to Any Room</h2></a>
+											<div class="post__meta"><a class="post__meta-item post__meta-item_author" href="#">Niek Bove</a>
+												<time class="post__meta-item" datetime="2019-12-06" pubdate="pubdate">April 8, 2018</time><span class="post__meta-item">3K Views</span>
+											</div>
+											<div class="post__description">
+												<p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…</p>
+											</div>
+										</article>
+										<article class="post"><a class="post__img" href="#">
+												<picture>
+													<source data-srcset="i/posts/5.webp 1x, i/posts/5@2x.webp 2x" type="image/webp"/><img class="lazy" data-src="i/posts/5.jpg" data-srcset="i/posts/5@2x.jpg 2x" alt="9 New Songs to Heat Up Your Fall Playlist"/>
+												</picture></a><a class="psot__tag" href="#">Lifestyle</a><a class="post__title" href="#">
+												<h2 class="entry-title">9 New Songs to Heat Up Your Fall Playlist</h2></a>
+											<div class="post__meta"><a class="post__meta-item post__meta-item_author" href="#">Niek Bove</a>
+												<time class="post__meta-item" datetime="2019-12-06" pubdate="pubdate">April 8, 2018</time><span class="post__meta-item">3K Views</span>
+											</div>
+											<div class="post__description">
+												<p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…</p>
+											</div>
+										</article>
+										<article class="post"><a class="post__img" href="#">
+												<picture>
+													<source data-srcset="i/posts/6.webp 1x, i/posts/6@2x.webp 2x" type="image/webp"/><img class="lazy" data-src="i/posts/6.jpg" data-srcset="i/posts/6@2x.jpg 2x" alt="What You Need on Your Bedside Table"/>
+												</picture></a><a class="psot__tag" href="#">Events</a><a class="post__title" href="#">
+												<h2 class="entry-title">What You Need on Your Bedside Table</h2></a>
+											<div class="post__meta"><a class="post__meta-item post__meta-item_author" href="#">Niek Bove</a>
+												<time class="post__meta-item" datetime="2019-12-06" pubdate="pubdate">April 8, 2018</time><span class="post__meta-item">3K Views</span>
+											</div>
+											<div class="post__description">
+												<p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…</p>
+											</div>
+										</article>
+										<article class="post"><a class="post__img" href="#">
+												<picture>
+													<source data-srcset="i/posts/7.webp 1x, i/posts/7@2x.webp 2x" type="image/webp"/><img class="lazy" data-src="i/posts/7.jpg" data-srcset="i/posts/7@2x.jpg 2x" alt="When Two Wheels Are Better Than Four"/>
+												</picture></a><a class="psot__tag" href="#">Travel</a><a class="post__title" href="#">
+												<h2 class="entry-title">When Two Wheels Are Better Than Four</h2></a>
+											<div class="post__meta"><a class="post__meta-item post__meta-item_author" href="#">Niek Bove</a>
+												<time class="post__meta-item" datetime="2019-12-06" pubdate="pubdate">April 8, 2018</time><span class="post__meta-item">3K Views</span>
+											</div>
+											<div class="post__description">
+												<p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…</p>
+											</div>
+										</article>
+										<article class="post"><a class="post__img" href="#">
+												<picture>
+													<source data-srcset="i/posts/8.webp 1x, i/posts/8@2x.webp 2x" type="image/webp"/><img class="lazy" data-src="i/posts/8.jpg" data-srcset="i/posts/8@2x.jpg 2x" alt="26 Living Room Ideas from the Homes of Top Designers"/>
+												</picture></a><a class="psot__tag" href="#">Travel</a><a class="post__title" href="#">
+												<h2 class="entry-title">26 Living Room Ideas from the Homes of Top Designers</h2></a>
+											<div class="post__meta"><a class="post__meta-item post__meta-item_author" href="#">Niek Bove</a>
+												<time class="post__meta-item" datetime="2019-12-06" pubdate="pubdate">April 8, 2018</time><span class="post__meta-item">3K Views</span>
+											</div>
+											<div class="post__description">
+												<p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…</p>
+											</div>
+										</article>
+										<article class="post"><a class="post__img" href="#">
+												<picture>
+													<source data-srcset="i/posts/9.webp 1x, i/posts/9@2x.webp 2x" type="image/webp"/><img class="lazy" data-src="i/posts/9.jpg" data-srcset="i/posts/9@2x.jpg 2x" alt="What Makes Your City’s Style Unique"/>
+												</picture></a><a class="psot__tag" href="#">Music</a><a class="post__title" href="#">
+												<h2 class="entry-title">What Makes Your City’s Style Unique</h2></a>
+											<div class="post__meta"><a class="post__meta-item post__meta-item_author" href="#">Niek Bove</a>
+												<time class="post__meta-item" datetime="2019-12-06" pubdate="pubdate">April 8, 2018</time><span class="post__meta-item">3K Views</span>
+											</div>
+											<div class="post__description">
+												<p>Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…</p>
+											</div>
+										</article>
+				</div>
+			</div>
+		</main>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/icons.js" async="async"></script>
+		<script async="async" src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+		<script>window.lazyLoadOptions = { elements_selector: ".lazy" };</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+mixin post(img, tag, title, description, author, date, views)
+	article(class="post")
+		a(href="#" class="post__img")
+			picture
+				source(data-srcset=`${img}.webp 1x, ${img}@2x.webp 2x` type="image/webp")
+				img(class="lazy" data-src=`${img}.jpg` data-srcset=`${img}@2x.jpg 2x` alt=`${title}`)
+
+
+
+		a(href="#" class="psot__tag") #{tag}
+
+		a(href="#" class="post__title")
+			h2(class="entry-title") #{title}
+
+		div(class="post__meta")
+			a(href="#" class="post__meta-item post__meta-item_author") #{author}
+			time(class="post__meta-item" datetime="2019-12-06" pubdate) #{date}
+			span(class="post__meta-item") #{views}
+
+		div(class="post__description")
+			p #{description}

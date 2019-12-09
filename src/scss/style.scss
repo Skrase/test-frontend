@@ -1,0 +1,131 @@
+@import "variables/variables.scss";
+
+
+.lazy{
+	opacity: 0;
+	transition: opacity .2s ease-in;
+	&.loaded{
+		opacity: 1;
+	}
+}
+
+
+
+.js-icon{
+	opacity: 0;
+	transition: opacity .2s ease-in;
+	&_loaded{
+		opacity: 1;
+	}
+}
+
+html{
+	font-size: 16px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main{
+	display: block;
+	overflow: hidden;
+}
+
+button, input[type="submit"]{
+	cursor: pointer;
+	border: none;
+}
+
+
+.center{
+	margin: 0 auto;
+	position: relative;
+	max-width: 1200;
+}
+
+
+.text{
+	&_center{
+		text-align: center
+	}
+	&_right{
+		text-align: right
+	}
+	&_left{
+		text-align: left
+	}
+}
+
+
+img{
+	max-width: 100%;
+	margin: 0;
+}
+
+.uppercase{
+	text-transform: uppercase
+}
+
+.underline{
+	text-decoration: underline;
+}
+
+
+
+body, input, textarea, button{
+	outline: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-o-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	&_jc-sb{
+		justify-content: space-between;
+	}
+	&_jc-sa{
+		justify-content: space-around;
+	}
+	&_jc-end{
+		justify-content: flex-end;
+	}
+	&_jc-start{
+		justify-content: flex-start;
+	}
+	&_jc-center{
+		justify-content: center;
+	}
+	&_ai-center{
+		align-items: center;
+	}
+	&_ai-end{
+		align-items: flex-end;
+	}
+	&_ai-fs{
+		align-items: flex-start;
+	}
+	&_reverse{
+		flex-direction: row-reverse;
+	}
+}
+
+
+.wrapper{
+	margin: 0 auto;
+	padding: 3rem 0;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+
+@import "../blocks/header/header.scss";
+@import "../blocks/main-nav/main-nav.scss";
+@import "../blocks/post/post.scss";

@@ -1,0 +1,103 @@
+html(lang="en")
+	head
+		include blocks/meta/meta
+	body
+		//- div(class="wrapper")
+		include blocks/header/header
+		include blocks/main-nav/main-nav
+		main
+			div(class="wrapper")
+				div(class="center flex")
+
+					include blocks/post/post
+
+
+					-
+						var posts = [
+							{
+								img: "i/posts/1",
+								tag : "Lifestyle",
+								title : "Eat Right For Your Exercise Regime",
+								description : "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…",
+								author : "Niek Bove",
+								date : "April 8, 2018",
+								views : "3K Views"
+							},
+							{
+								img: "i/posts/2",
+								tag : "Lifestyle",
+								title : "The Look: Perfect Balance",
+								description : "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…",
+								author : "Niek Bove",
+								date : "April 8, 2018",
+								views : "3K Views"
+							},
+							{
+								img: "i/posts/3",
+								tag : "Style",
+								title : "Fun Things to Do in Rome",
+								description : "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…",
+								author : "Niek Bove",
+								date : "April 8, 2018",
+								views : "3K Views"
+							},
+							{
+								img: "i/posts/4",
+								tag : "Style",
+								title : "24 Colorful Ceilings That Add Unexpected Contrast to Any Room",
+								description : "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…",
+								author : "Niek Bove",
+								date : "April 8, 2018",
+								views : "3K Views"
+							},
+							{
+								img: "i/posts/5",
+								tag : "Lifestyle",
+								title : "9 New Songs to Heat Up Your Fall Playlist",
+								description : "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…",
+								author : "Niek Bove",
+								date : "April 8, 2018",
+								views : "3K Views"
+							},
+							{
+								img: "i/posts/6",
+								tag : "Events",
+								title : "What You Need on Your Bedside Table",
+								description : "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…",
+								author : "Niek Bove",
+								date : "April 8, 2018",
+								views : "3K Views"
+							},
+							{
+								img: "i/posts/7",
+								tag : "Travel",
+								title : "When Two Wheels Are Better Than Four",
+								description : "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…",
+								author : "Niek Bove",
+								date : "April 8, 2018",
+								views : "3K Views"
+							},
+							{
+								img: "i/posts/8",
+								tag : "Travel",
+								title : "26 Living Room Ideas from the Homes of Top Designers",
+								description : "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…",
+								author : "Niek Bove",
+								date : "April 8, 2018",
+								views : "3K Views"
+							},
+							{
+								img: "i/posts/9",
+								tag : "Music",
+								title : "What Makes Your City’s Style Unique",
+								description : "Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button…",
+								author : "Niek Bove",
+								date : "April 8, 2018",
+								views : "3K Views"
+							},
+						]
+
+					each post in posts
+						+post(post.img, post.tag, post.title, post.description, post.author, post.date, post.views)
+
+		include blocks/scripts/scripts

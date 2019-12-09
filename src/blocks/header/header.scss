@@ -1,0 +1,121 @@
+.header{
+	background: $white;
+	font-family: $font;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+	padding: remCalc(28) 0;
+	border-bottom: 1px solid $gray;
+}
+
+
+.header__column{
+	width: auto;
+}
+
+.header__logo{
+	width: 168px;
+	margin-right: auto;
+	margin-left: 30px;
+	img{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+
+.header__search-button{
+	display: none;
+	width: 18px;
+	height: 18px;
+	margin-left: auto;
+	background: none;
+	margin: 0 20px 0 0;
+	@extend %svg-wrapper;
+}
+
+.header__nav-button{
+	display: block;
+	width: 27px;
+	height: 28px;
+	position: relative;
+	background: transparent;
+	margin-right: 30px;
+	font-family: $font;
+	&_active{
+		.header__nav-button-line{
+			&_top{
+				top: 12px;
+				transform: rotate(45deg);
+			}
+			&_mid{
+				top: 12px;
+				transform: scaleX(0);
+			}
+			&_bot{
+				top: 12px;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+
+.header__nav-button-line{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	background: $black;
+	transition: all .2s ease-in;
+	&_top{
+		top: 4px;
+	}
+	&_mid{
+		top: 12px;
+	}
+	&_bot{
+		top: 20px;
+	}
+
+}
+
+
+@media screen and (min-width: 1024px){
+
+	.header{
+		position: static;
+	}
+
+
+	.header__logo{
+		width: 180px;
+		margin-right: 20px;
+		margin-left: 20px;
+		img{
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	.header__nav-button{
+		display: none;
+	}
+
+	.header__search-button{
+		display: block;
+
+	}
+
+
+	.header__column{
+		// width: 200px;
+		flex: 1;
+		display: flex;
+	}
+}

@@ -1,0 +1,10 @@
+@import "../variables/variables.scss";
+
+.entry-title{
+	font-family: $font;
+	font-size: remCalc(24);
+	line-height: remCalc(30);
+	font-weight: 700;
+	margin: 0 0 remCalc(16);
+}
+

@@ -1,0 +1,152 @@
+
+.main-nav{
+	display: none;
+	background: $white;
+	position: sticky;
+	left: 0;
+	right: 0;
+	font-family: $font;
+	z-index: 1;
+}
+
+.main-nav__list{
+	padding: 30px;
+	display: block;
+}
+
+.main-nav__sublist{
+	padding: 0 remCalc(30);
+}
+
+.main-nav__item{
+	display: block;
+	> a{
+		font-size: remCalc(16);
+		line-height: remCalc(16);
+		text-decoration: none;
+		font-weight: 500;
+		padding: remCalc(16) 0;
+		display: flex;
+		align-items: center;
+		color: $black;
+		border-bottom: 1px solid $gray;
+	}
+	&_subitem{
+		> a{
+			font-size: remCalc(12);
+			line-height: remCalc(12);
+		}
+	}
+	&_active{
+		> a > .main-nav__item-icon{
+			transform: rotate(180deg);
+		}
+	}
+}
+
+
+.main-nav__item-title{
+	max-width: calc(100% - 14px);
+	transition: transform .2s ease-in;
+}
+
+.main-nav__item-icon{
+	width: 10px;
+	height: 6px;
+	margin: 0 0 0 4px;
+	transition: all .2s ease-in;
+	@extend %svg-wrapper;
+	&_right{
+		width: 8px;
+		height: 5px;
+		transform: rotate(-90deg);
+	}
+}
+
+.main-nav__sublist{
+	display: none;
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+
+	.main-nav{
+		display: block;
+		top: 0;
+		border-bottom: 1px solid $gray;
+		transition: all .2s ease-in;
+		&_hidden{
+			transform: translateY(-100%);
+		}
+	}
+
+	.main-nav__list{
+		display: flex;
+		justify-content: center;
+		padding: 0 remCalc(15);
+	}
+
+
+
+	.main-nav__item{
+		margin: 0;
+		position: relative;
+		> a{
+			color: $black;
+			padding: remCalc(20) remCalc(15);
+			border: none;
+
+
+		}
+		&:hover > .main-nav__sublist{
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+		&_subitem{
+			margin: 0;
+			display: block;
+			> a{
+				font-size: remCalc(13);
+				line-height: remCalc(13);
+				padding: remCalc(8) 0;
+			}
+		}
+
+	}
+	
+
+	.main-nav__sublist{
+		position: absolute;
+		left: 0;
+		top: 100%;
+		display: block;
+		padding: 0;
+		background: $white;
+		width: 175px;
+		border: 1px solid $gray;
+		padding: remCalc(12) remCalc(20);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(30px);
+		transition: all .2s ease-in;
+		.main-nav__item:not(:last-child){
+			border-bottom: 1px solid $gray;
+
+		}
+		.main-nav__item > a{
+			justify-content: space-between;
+			transition: all .2s ease-in;
+			&:hover{
+				color: $lightText;
+				.main-nav__item-title{
+					transform: translateX(8px);
+				}
+			}
+		}
+	}
+	
+
+}

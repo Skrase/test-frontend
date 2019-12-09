@@ -1,0 +1,41 @@
+$font: "Roboto", sans-serif;
+
+
+$white: #FFF;
+$black: #000;
+
+$red: #EB0028;
+
+
+$gray: #E9E9E9;
+$lightGray: #D7D7D7;
+
+$lightText: #9B9B9B;
+$semiLightText: #929292;
+
+
+
+
+%svg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+
+%svg-wrapper{
+	position: relative;
+	svg{
+		@extend %svg;
+	}
+}
+
+
+
+@function remCalc($n){
+	@return ($n / 16) + rem;
+}
